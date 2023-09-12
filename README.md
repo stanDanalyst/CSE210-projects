@@ -1,5 +1,5 @@
 # cse210-ww-student-template
-Ahamba, Stanley
+Student: Ahamba, Stanley
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
