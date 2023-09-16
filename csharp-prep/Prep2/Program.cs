@@ -9,9 +9,11 @@ class Program
         Console.Write("What is your grade percentage? ");
         string grade = Console.ReadLine();
 
+        //Convert string to int
         int newGrade = int.Parse(grade);
         char letter;
 
+        //Logic to used to identify grade.
         if (newGrade >= 90)
        
         {
@@ -34,9 +36,28 @@ class Program
         {
             letter = 'F';
         }
+        char sign;
 
-        Console.WriteLine($"Your grade is {letter}");
+        //Logic for + or negative sing
+        int remender = newGrade % 10;
 
+        if (remender >= 7 && newGrade > 60 && newGrade < 90)
+        {
+            sign = '+';
+        }
+        else if (remender <= 6 && newGrade > 60 && newGrade < 93)
+        {
+            sign = '-';
+        }
+        else
+        {
+            sign = ' ';
+        }
+
+        //Print grade to the screen
+        Console.WriteLine($"Your grade is {letter}{sign}");
+
+        //Check if user passed or failed the class
         int passClass = newGrade;
 
         if (passClass >= 70)
