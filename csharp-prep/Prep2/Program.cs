@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         //Get grade percentage from a user
-        Console.Write("What is your grade percentage? ");
+        Console.WriteLine("What is your grade percentage? ");
         string grade = Console.ReadLine();
 
         //Convert string to int
