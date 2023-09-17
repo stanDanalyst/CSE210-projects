@@ -9,10 +9,9 @@ class Program
         string userName = PromptUserName();
         int userNumber = PromptUserNumber();
 
-        OutOfMemoryException squaredNumber = squaredNumber(userNumber);
+        int squaredNumber = SquareNumber(userNumber);
+
         DisplayResult(userName, squaredNumber);
-
-
     }
 
     static void DisplayWelcomMessage()
@@ -35,7 +34,7 @@ class Program
 
         return number;
     }
-    static int squaredNumber(int number)
+    static int SquareNumber(int number)
     {
         int square = number * number;
         
