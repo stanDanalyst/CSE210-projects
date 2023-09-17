@@ -62,6 +62,10 @@ class Program
                     Console.WriteLine("Sounds good, see you next time!");
                     Console.WriteLine();
                 }
+                else
+                {
+                    Console.WriteLine("Wrong input, goodbye!");
+                }
            }       
      }   
     }
