@@ -15,8 +15,8 @@ class Program
         //Variables.
         int newGuess = -1;
         int numbGuess = 1;
-        string resp1 = "YES";
-        string resp2 = "NO";
+        string respYes = "YES";
+        string respNo = "NO";
 
         //Loop until user guess the number right.
         while (newGuess != newNumber)
@@ -40,7 +40,7 @@ class Program
            }
            else
            {
-                Console.WriteLine();
+               Console.WriteLine();
                Console.WriteLine("Congratulations, you guessed it!");
                Console.WriteLine($"It took you: {countGuess} guesses");
                Console.WriteLine();
@@ -53,11 +53,11 @@ class Program
                 string upperCase = playAgain.ToUpper();
                  Console.WriteLine();
 
-                if (upperCase == resp1)
+                if (upperCase == respYes)
                 {
                     newNumber = number.Next(1, 101);
                 }
-                else if (upperCase == resp2)
+                else if (upperCase == respNo)
                 {
                     Console.WriteLine("Sounds good, see you next time!");
                     Console.WriteLine();
